@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data Pipeline — Graph</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="title">Raw data → decade labeling → 5yr ranges → yearly structure</div>
+    <div class="hint">drag to pan · scroll to pan · ctrl/⌘ + scroll or pinch to zoom</div>
+  </div>
+
+  <div class="zoom-controls">
+    <button id="zoomIn" aria-label="Zoom in">+</button>
+    <button id="zoomReset" aria-label="Reset view">⊙</button>
+    <button id="zoomOut" aria-label="Zoom out">−</button>
+  </div>
+
+  <div id="viewport" class="viewport">
+    <div id="world" class="world">
+      <svg id="edges" class="edges"></svg>
+      <div id="nodes" class="nodes"></div>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
