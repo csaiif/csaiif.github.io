@@ -1,0 +1,43 @@
+/* Phone version: tighter frame, stacked layouts, no side rail. */
+#frame { inset: 8px; }
+#frame i { width: 16px; height: 16px; }
+#hud-tl { left: 22px; top: 22px; font-size: 0.8rem; }
+#switch { right: 22px; top: 22px; font-size: 0.75rem; }
+#rail { display: none; }
+#readout { left: 22px; bottom: 22px; font-size: 0.78rem; max-width: 60vw; }
+#hint { bottom: 22px; font-size: 0.78rem; }
+.content { padding: 0 16px; }
+
+.title { font-size: 1.15rem; margin-top: 26px; }
+.hero-ico .ico { width: 96px; height: 96px; }
+.head { font-size: 0.95rem; margin-bottom: 30px; }
+.comp { width: 56vw; height: 56vw; }
+
+/* rows stay on one line: labels shrink, and the 5-year labels run vertically */
+.row { gap: 4px; }
+.node { padding: 16px 2px 14px; gap: 8px; }
+.node .ico { width: 24px; height: 24px; }
+.node b { font-size: 0.72rem; letter-spacing: 0; }
+.node small { font-size: 0.62rem; }
+.row.ranges .node b { writing-mode: vertical-rl; transform: rotate(180deg); font-size: 0.8rem; padding: 4px 0; }
+.row.ranges .node { padding: 16px 0 14px; }
+
+/* 2004: a grid instead of a ring */
+.year { padding: 90px 16px 90px; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.year .web { display: none; }
+.yr-center { position: static; transform: none; margin-bottom: 26px; }
+.rgrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; width: 100%; }
+.rnode { position: static; transform: none; min-width: 0; padding: 12px 4px; font-size: 0.7rem; word-break: break-word; }
+.rnode .ico { width: 22px; height: 22px; }
+
+.cat { flex-direction: column; gap: 22px; text-align: left; justify-content: center; align-items: stretch; padding: 70px 22px 70px; }
+.cat-l { align-items: flex-start; }
+.path { margin-bottom: 14px; font-size: 0.78rem; }
+.big-ico .ico { width: 72px; height: 72px; }
+.cname { font-size: 1.3rem; margin-top: 14px; }
+.cat-r { width: 100%; padding: 0; border: 0; }
+.entries li { padding: 12px 0; font-size: 0.95rem; }
+.more { width: 100%; justify-content: center; padding: 14px; }
+
+#panel { width: 100vw; top: auto; height: 82dvh; border-left: 0; border-top: 1px solid var(--line-hi); transform: translateY(100%); padding: 0 20px 40px; }
+#panel.open { transform: none; }
